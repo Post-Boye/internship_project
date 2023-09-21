@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.grid-foods{
+			border: 1px solid inherit;
+    border-radius: 5px;
+    background: rgb(216, 207, 207);
+    padding: 20px;
+	text-transform: initial;
+		
+		}
+		.conti {
+			display: grid;
+			grid-template-columns: repeat(3, minmax(100px, 1fr));
+			grid-auto-rows: minmax(220px, auto);
+			gap: 40px;
+			padding: 40px 0 40px 0;
+		}
+		.images > img {
+			width: 200px;
+			border-radius: 100%;
+			align-items: center;
+		}
+		img{
+			width: 350px;
+			padding: 3.2rem;
+		} 
+		
+	</style>
+</head>
+<body>
+	<div class="conti">
+		<div class="grid-foods">
+			<figure class="images">
+				<img src="more food.jpg" alt="">
+			</figure>
+			<h3 class="tit">More Food  </h3>
+			<p> connect and get a better food.Our cooks only use local, fresh, and organic products to prepare your meals.
+				<br><button class="btn">Add To Cart</button>
+			</p>
+		</div>
+		<div class="grid-foods">
+			<figure class="images">
+				<img src="more food.jpg" alt="">
+			</figure>
+			<h3 class="tit">More Food  </h3>
+			<p> connect and get a better food.Our cooks only use local, fresh, and organic products to prepare your meals.
+				<br><button class="btn">Add To Cart</button>
+			</p>
+		</div>
+		<div class="grid-foods">
+			<figure class="images">
+				<img src="more food.jpg" alt="">
+			</figure>
+			<h3 class="tit">More Food  </h3>
+			<p> connect and get a better food.Our cooks only use local, fresh, and organic products to prepare your meals.
+				<br><button class="btn">Add To Cart</button>
+			</p>
+		</div>
+
+	</div>
+	
+</body>
+</html>

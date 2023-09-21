@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.ses-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding : 50px 0 0 0;
+
+}
+.ses-grid-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(red, green, blue, alpha);
+}
+.ser-image-cont {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+}
+.service-image {
+  width: 100%;
+  border: 2px solid burlywood;
+  margin: 30px 0 30px 0;
+}
+.service-image > img {
+  width: 100%;
+}
+.ses-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  padding: ;
+}

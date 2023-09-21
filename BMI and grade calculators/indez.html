@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		
+		
+		
+	</style>
+</head>
+<body>
+	<h1>GRADING SYSTEM </h1>
+	<input type="text" style="margin-bottom: 30px;" placeholder="your subject...." id="subject"><br>
+	<input type="text" style="margin-bottom: 30px;" placeholder="your score ..." id="score"><br>
+	<h2 id="result">input mark to get result</h2>
+	<button onclick="generator()">generate results</button>
+	<script>
+		function generator(){
+			let studentSubject=document.getElementById('subject').value;
+			let userInput=document.getElementById('score').value;
+
+
+
+			if(userInput>=80 && userInput<=100){
+				document.getElementById('result').innerHTML=`You had an A in ${studentSubject} which is equivalent to EXCELLENT`;
+
+			} else if (userInput>=75 && userInput<=79){
+				document.getElementById('result').innerHTML=`You had an B in ${studentSubject} which is equivalent to VERY GOOD`;
+			 } else if (userInput>=70 && userInput<=74){
+				document.getElementById('result').innerHTML=`You had an C in ${studentSubject} which is equivalent to GOOD`;
+
+			}else if (userInput>=65 && userInput<=69){
+				document.getElementById('result').innerHTML=`You had an D in ${studentSubject} which is equivalent to PASS`;
+			}
+
+			 else if (userInput>=60 && userInput<=64){
+				document.getElementById('result').innerHTML=`You had an E in ${studentSubject} which is equivalent to BAD`;
+			}
+			else if (userInput>=55 && userInput<=59){
+				document.getElementById('result').innerHTML=`You had an f in ${studentSubject} which is equivalent to very bad`;
+
+			}else if (userInput>=50 && userInput<=54){
+				document.getElementById('result').innerHTML=`You had an g in ${studentSubject} which is equivalent to poor`;
+
+			}else{
+				document.getElementById('result').innerHTML=`You had an q in ${studentSubject} which is equivalent to go home `;
+			}
+		}
+		
+    
+
+	</script>
+
+	 <!-- Product Features Section -->
+	 
+</body>
+</html>
